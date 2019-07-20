@@ -1,0 +1,138 @@
+[
+  {
+    "comment": "at this point model has been refactored with finer parameters. ES delta 0.0005 to train longer.",
+    "desc": "fineparameters_mimic_v1",
+    "timesteps": 399,
+    "loss": "exp_loss",
+
+    "depth_timedist_dense": 1,
+    "td1_dense_units": 174,
+    "td1_dense_activation": "sigmoid",
+    "td1_dense_dropout": 0.4,
+    "td1_dense_l2reg": 0,
+
+    "stack_lstm_count": 2,
+    "bidirectional_lstms": false,
+    "lstm1_units": 80,
+    "lstm1_dropout": 0,
+    "lstm1_recurrent_dropout": 0.0,
+    "lstm1_l2reg": 0.0,
+    "lstm2_units": 80,
+    "lstm2_dropout": 0.4,
+    "lstm2_recurrent_dropout": 0.0,
+    "lstm2_l2reg": 0.05,
+
+    "depth_projection_dense": 1,
+    "dense1_units": 174,
+    "dense1_activation": "sigmoid",
+    "dense1_dropout": 0.4,
+    "dense1_l2reg": 0.005,
+
+    "out_dense_activation": "sigmoid",
+    "out_dense_l2reg": 0.005
+  },
+  {
+    "comment": "at this point model has been refactored with finer parameters. ES delta 0.0005 to train longer.",
+    "desc": "fineparameters_more_proj_dense_units",
+    "timesteps": 399,
+    "loss": "exp_loss",
+
+    "depth_timedist_dense": 1,
+    "td1_dense_units": 174,
+    "td1_dense_activation": "sigmoid",
+    "td1_dense_dropout": 0.4,
+    "td1_dense_l2reg": 0,
+
+    "stack_lstm_count": 2,
+    "bidirectional_lstms": false,
+    "lstm1_units": 80,
+    "lstm1_dropout": 0,
+    "lstm1_recurrent_dropout": 0.0,
+    "lstm1_l2reg": 0.0,
+    "lstm2_units": 80,
+    "lstm2_dropout": 0.4,
+    "lstm2_recurrent_dropout": 0.0,
+    "lstm2_l2reg": 0.05,
+
+    "depth_projection_dense": 1,
+    "dense1_units": 232,
+    "dense1_activation": "sigmoid",
+    "dense1_dropout": 0.4,
+    "dense1_l2reg": 0.005,
+
+    "out_dense_activation": "sigmoid",
+    "out_dense_l2reg": 0.005
+  },
+  {
+    "comment": "at this point model has been refactored with finer parameters. ES delta 0.0005 to train longer.",
+    "desc": "fineparameters_2proj",
+    "timesteps": 399,
+    "loss": "exp_loss",
+
+    "depth_timedist_dense": 1,
+    "td1_dense_units": 174,
+    "td1_dense_activation": "sigmoid",
+    "td1_dense_dropout": 0.4,
+    "td1_dense_l2reg": 0,
+
+    "stack_lstm_count": 2,
+    "bidirectional_lstms": false,
+    "lstm1_units": 80,
+    "lstm1_dropout": 0,
+    "lstm1_recurrent_dropout": 0.0,
+    "lstm1_l2reg": 0.0,
+    "lstm2_units": 80,
+    "lstm2_dropout": 0.4,
+    "lstm2_recurrent_dropout": 0.0,
+    "lstm2_l2reg": 0.05,
+
+    "depth_projection_dense": 2,
+    "dense1_units": 174,
+    "dense1_activation": "sigmoid",
+    "dense1_dropout": 0.4,
+    "dense1_l2reg": 0.005,
+    "dense2_units": 174,
+    "dense2_activation": "sigmoid",
+    "dense2_dropout": 0.4,
+    "dense2_l2reg": 0.005,
+
+    "out_dense_activation": "sigmoid",
+    "out_dense_l2reg": 0.005
+  },
+  {
+    "comment": "at this point model has been refactored with finer parameters. ES delta 0.0005 to train longer.",
+    "desc": "fineparameters_2timedist",
+    "timesteps": 399,
+    "loss": "exp_loss",
+
+    "depth_timedist_dense": 2,
+    "td1_dense_units": 174,
+    "td1_dense_activation": "sigmoid",
+    "td1_dense_dropout": 0.4,
+    "td1_dense_l2reg": 0,
+    "td2_dense_units": 174,
+    "td2_dense_activation": "sigmoid",
+    "td2_dense_dropout": 0.4,
+    "td2_dense_l2reg": 0,
+
+    "stack_lstm_count": 2,
+    "bidirectional_lstms": false,
+    "lstm1_units": 80,
+    "lstm1_dropout": 0,
+    "lstm1_recurrent_dropout": 0.0,
+    "lstm1_l2reg": 0.0,
+    "lstm2_units": 80,
+    "lstm2_dropout": 0.4,
+    "lstm2_recurrent_dropout": 0.0,
+    "lstm2_l2reg": 0.05,
+
+    "depth_projection_dense": 1,
+    "dense1_units": 174,
+    "dense1_activation": "sigmoid",
+    "dense1_dropout": 0.4,
+    "dense1_l2reg": 0.005,
+
+    "out_dense_activation": "sigmoid",
+    "out_dense_l2reg": 0.005
+  }
+]

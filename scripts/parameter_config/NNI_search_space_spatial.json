@@ -1,0 +1,48 @@
+{
+  "timesteps": {
+    "_type": "quniform",
+    "_value": [
+      1,
+      200,
+      1
+    ]
+  },
+  "lstm_units": {
+    "_type": "quniform",
+    "_value": [
+      1,
+      200,
+      1
+    ]
+  },
+  "bidirectional" : {
+    "_type" : "choice",
+    "_value": [false, true]
+  },
+  "random_seed" : {
+    "_type" : "randint",
+    "_value" : [0,400]
+  },
+  "input_N": {
+    "_type": "quniform",
+    "_value": [
+      1,
+      29,
+      1
+    ]
+  },
+  "lstm_recurrent_dropout": {
+    "_type": "uniform",
+    "_value": [
+      0,
+      0.5
+    ]
+  },
+  "dense_l2reg": {
+    "_type": "uniform",
+    "_value": [
+      0,
+      0.0005
+    ]
+  }
+}

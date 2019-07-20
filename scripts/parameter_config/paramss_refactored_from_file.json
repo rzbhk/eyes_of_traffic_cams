@@ -1,0 +1,34 @@
+[
+  {"desc" : "halfunitson2", "timesteps" : 399, "loss" : "exp_loss",
+  "stack_lstm_count" : 2, "bidirectional_lstms" : false,
+  "lstm1_units" : 80, "lstm1_dropout" : 0, "lstm1_recurrent_dropout" : 0.0, "lstm1_l2reg" : 0.0,
+  "lstm2_units" : 40, "lstm2_dropout" : 0, "lstm2_recurrent_dropout" : 0.0, "lstm2_l2reg" : 0.0,
+  "dense_units" : 174, "dense_dropout" : 0.4, "dense_l2reg" : 0.001, "dense_activation" : "sigmoid"},
+
+  {"desc" : "0.1recurdropoutonboth", "timesteps" : 399, "loss" : "exp_loss",
+  "stack_lstm_count" : 2, "bidirectional_lstms" : false,
+  "lstm1_units" : 80, "lstm1_dropout" : 0, "lstm1_recurrent_dropout" : 0.1, "lstm1_l2reg" : 0.0,
+  "lstm2_units" : 80, "lstm2_dropout" : 0, "lstm2_recurrent_dropout" : 0.1, "lstm2_l2reg" : 0.0,
+  "dense_units" : 174, "dense_dropout" : 0.4, "dense_l2reg" : 0.001, "dense_activation" : "sigmoid"},
+
+  {"desc" : "moreunitsondense", "timesteps" : 399, "loss" : "exp_loss",
+  "stack_lstm_count" : 2, "bidirectional_lstms" : false,
+  "lstm1_units" : 80, "lstm1_dropout" : 0, "lstm1_recurrent_dropout" : 0.0, "lstm1_l2reg" : 0.0,
+  "lstm2_units" : 80, "lstm2_dropout" : 0.3, "lstm2_recurrent_dropout" : 0.0, "lstm2_l2reg" : 0.005,
+  "dense_units" : 232, "dense_dropout" : 0.4, "dense_l2reg" : 0.001, "dense_activation" : "sigmoid"},
+
+  {"desc" : "stack3_808040", "timesteps" : 399, "loss" : "exp_loss",
+  "stack_lstm_count" : 3, "bidirectional_lstms" : false,
+  "lstm1_units" : 80, "lstm1_dropout" : 0, "lstm1_recurrent_dropout" : 0.0, "lstm1_l2reg" : 0.0,
+  "lstm2_units" : 80, "lstm2_dropout" : 0, "lstm2_recurrent_dropout" : 0.0, "lstm2_l2reg" : 0.0,
+  "lstm3_units" : 40, "lstm3_dropout" : 0, "lstm3_recurrent_dropout" : 0.0, "lstm3_l2reg" : 0.0,
+  "dense_units" : 174, "dense_dropout" : 0.4, "dense_l2reg" : 0.001, "dense_activation" : "sigmoid"},
+
+  {"desc" : "stack3_808080_regon2", "timesteps" : 399, "loss" : "exp_loss",
+  "stack_lstm_count" : 3, "bidirectional_lstms" : false,
+  "lstm1_units" : 80, "lstm1_dropout" : 0, "lstm1_recurrent_dropout" : 0.0, "lstm1_l2reg" : 0.0,
+  "lstm2_units" : 80, "lstm2_dropout" : 0.4, "lstm2_recurrent_dropout" : 0.0, "lstm2_l2reg" : 0.0005,
+  "lstm3_units" : 80, "lstm3_dropout" : 0, "lstm3_recurrent_dropout" : 0.0, "lstm3_l2reg" : 0.0,
+  "dense_units" : 174, "dense_dropout" : 0.4, "dense_l2reg" : 0.001, "dense_activation" : "sigmoid"}
+
+]

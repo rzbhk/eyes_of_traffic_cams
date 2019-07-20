@@ -1,0 +1,29 @@
+authorName: Roozbeh
+experimentName: LSTM_ALL_CAMERAS_6_3
+trialConcurrency: 1
+maxExecDuration: 12h
+maxTrialNum: 400
+#choice: local, remote, pai
+trainingServicePlatform: local
+searchSpacePath: NNI_params_vicinity_of_best_in_LSTM_ALL_CAMERAS_5_30.json
+#choice: true, false
+useAnnotation: false
+tuner:
+  #choice: TPE, Random, Anneal, Evolution, BatchTuner
+  #SMAC (SMAC should be installed through nnictl)
+  builtinTunerName: TPE
+  classArgs:
+    #choice: maximize, minimize
+    optimize_mode: minimize
+assessor:
+  #choice: Medianstop
+  builtinAssessorName: Medianstop
+  classArgs:
+    #choice: maximize, minimize
+    optimize_mode: minimize
+    start_step: 4
+  gpuNum: 0
+trial:
+  command: "\"conda activate spatio_temporal && python train_lstm_for_london_NNI.py\""
+  codeDir: .
+  gpuNum: 0

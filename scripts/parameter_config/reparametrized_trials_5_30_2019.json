@@ -1,0 +1,27 @@
+[
+  {
+    "_ignore": false,
+    "_comment": "measuring speed up",
+    "desc": "speepup1",
+    "timesteps": 399,
+    "loss": "mse",
+    "depth_timedist_dense": 1,
+    "td1_dense_units": 174,
+    "td1_dense_activation": "relu",
+    "td1_dense_dropout": 0,
+    "td1_dense_l2reg": 0.0005,
+    "stack_lstm_count": 1,
+    "bidirectional_lstms": false,
+    "lstm1_units": 80,
+    "lstm1_dropout": 0,
+    "lstm1_recurrent_dropout": 0.0,
+    "lstm1_l2reg": 0.0,
+    "depth_projection_dense": 1,
+    "dense1_units": 174,
+    "dense1_activation": "sigmoid",
+    "dense1_dropout": 0.4,
+    "dense1_l2reg": 0.0005,
+    "out_dense_activation": "sigmoid",
+    "out_dense_l2reg": 0.0005
+  }
+]

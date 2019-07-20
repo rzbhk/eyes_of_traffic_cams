@@ -1,0 +1,34 @@
+{
+    "timesteps": 38,
+    "td1_dense_units": 320,
+    "td1_dense_activation": "relu",
+    "td1_dense_dropout": 0.07124417263463417,
+    "td1_dense_l2reg": 0,
+    "td2": {
+        "_name": "Empty"
+    },
+    "bidirectional_lstms": true,
+    "lstm1_units": 160,
+    "lstm1_dropout": 0.14379872749300465,
+    "lstm1_recurrent_dropout": 0.05380846767759767,
+    "lstm1_l2reg": 0,
+    "lstm2": {
+        "_name": "Empty"
+    },
+    "dense1": {
+        "_name": "DENSE1",
+        "dense1_units": 60,
+        "dense1_activation": "sigmoid",
+        "dense1_dropout": 0.4576796846002729,
+        "dense1_l2reg": 0.00001,
+        "dense2": {
+            "_name": "DENSE2",
+            "dense2_units": 160,
+            "dense2_activation": "sigmoid",
+            "dense2_dropout": 0.1698948640975838,
+            "dense2_l2reg": 0.01
+        }
+    },
+    "out_dense_activation": "sigmoid",
+    "out_dense_l2reg": 0.00001
+}

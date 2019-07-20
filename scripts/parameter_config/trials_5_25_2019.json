@@ -1,0 +1,31 @@
+[
+  {"desc" : "refactoredagain_mimic_v1_seecommentparam", "timesteps" : 399, "loss" : "exp_loss",
+  "stack_lstm_count" : 2, "bidirectional_lstms" : false,
+  "lstm1_units" : 80, "lstm1_dropout" : 0, "lstm1_recurrent_dropout" : 0.0, "lstm1_l2reg" : 0.0,
+  "lstm2_units" : 80, "lstm2_dropout" : 0.4, "lstm2_recurrent_dropout" : 0.0, "lstm2_l2reg" : 0.05,
+  "dense_units" : 174, "dense_dropout" : 0.4, "dense_l2reg" : 0.005, "dense_activation" : "sigmoid",
+  "comment" :  "at this point model has been refactored with get dense layers with reg and act params on all denses. delta 0.0001 to train longer."},
+
+  {"desc" : "mimic_v1_withmoreunitsondense", "timesteps" : 399, "loss" : "exp_loss",
+  "stack_lstm_count" : 2, "bidirectional_lstms" : false,
+  "lstm1_units" : 80, "lstm1_dropout" : 0, "lstm1_recurrent_dropout" : 0.0, "lstm1_l2reg" : 0.0,
+  "lstm2_units" : 80, "lstm2_dropout" : 0.4, "lstm2_recurrent_dropout" : 0.0, "lstm2_l2reg" : 0.05,
+  "dense_units" : 232, "dense_dropout" : 0.4, "dense_l2reg" : 0.005, "dense_activation" : "sigmoid",
+  "comment" :  "at this point model has been refactored with get dense layers with reg and act params on all denses. delta 0.0001 to train longer."},
+
+  {"desc" : "tdist2", "timesteps" : 399, "loss" : "exp_loss",
+  "depth_timedist_dense" : 2, "depth_projection_dense" : 1,
+  "stack_lstm_count" : 2, "bidirectional_lstms" : false,
+  "lstm1_units" : 80, "lstm1_dropout" : 0, "lstm1_recurrent_dropout" : 0.0, "lstm1_l2reg" : 0.0,
+  "lstm2_units" : 80, "lstm2_dropout" : 0.4, "lstm2_recurrent_dropout" : 0.0, "lstm2_l2reg" : 0.05,
+  "dense_units" : 174, "dense_dropout" : 0.4, "dense_l2reg" : 0.005, "dense_activation" : "sigmoid",
+  "comment" :  "at this point model has been refactored with get dense layers with reg and act params on all denses. delta 0.0001 to train longer."},
+
+  {"desc" : "tdist1dense2", "timesteps" : 399, "loss" : "exp_loss",
+  "depth_timedist_dense" : 1, "depth_projection_dense" : 2,
+  "stack_lstm_count" : 2, "bidirectional_lstms" : false,
+  "lstm1_units" : 80, "lstm1_dropout" : 0, "lstm1_recurrent_dropout" : 0.0, "lstm1_l2reg" : 0.0,
+  "lstm2_units" : 80, "lstm2_dropout" : 0.4, "lstm2_recurrent_dropout" : 0.0, "lstm2_l2reg" : 0.05,
+  "dense_units" : 174, "dense_dropout" : 0.4, "dense_l2reg" : 0.005, "dense_activation" : "sigmoid",
+  "comment" :  "at this point model has been refactored with get dense layers with reg and act params on all denses. delta 0.0001 to train longer."}
+]

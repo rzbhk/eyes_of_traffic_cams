@@ -1,0 +1,8 @@
+{
+    "timesteps": 2,
+    "lstm_units": 135,
+    "K": 5,
+    "lstm_dropout": 0.03216795095261028,
+    "lstm_recurrent_dropout": 0.4885023555904258,
+    "dense_l2reg": 0.0002523576467422392
+}

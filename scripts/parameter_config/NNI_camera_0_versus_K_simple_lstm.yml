@@ -1,0 +1,29 @@
+authorName: Roozbeh
+experimentName: CAMERA_0_versus_K_simple_lstm
+trialConcurrency: 3
+maxExecDuration: 72h
+maxTrialNum: 1000
+#choice: local, remote, pai
+trainingServicePlatform: local
+searchSpacePath: NNI_search_space_camera_0_versus_K_simple_lstm.json
+#choice: true, false
+useAnnotation: false
+tuner:
+  #choice: TPE, Random, Anneal, Evolution, BatchTuner
+  #SMAC (SMAC should be installed through nnictl)
+  builtinTunerName: TPE
+  classArgs:
+    #choice: maximize, minimize
+    optimize_mode: minimize
+assessor:
+  #choice: Medianstop
+  builtinAssessorName: Medianstop
+  classArgs:
+    #choice: maximize, minimize
+    optimize_mode: minimize
+    start_step: 6
+  gpuNum: 0
+trial:
+  command: "python train_lstm_per_camera_for_london_K_cam_NNI.py 0"
+  codeDir: ../
+  gpuNum: 0

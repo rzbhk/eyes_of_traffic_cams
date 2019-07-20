@@ -1,0 +1,297 @@
+{
+  "timesteps": {
+    "_type": "choice",
+    "_value": [
+      19,
+      38,
+      57,
+      76,
+      95,
+      114,
+      133,
+      152,
+      171,
+      190,
+      209,
+      228,
+      247,
+      266,
+      285,
+      304,
+      323,
+      342,
+      361,
+      380,
+      399,
+      418,
+      437,
+      456,
+      475,
+      494,
+      513,
+      532
+    ]
+  },
+  "td1_dense_units": {
+    "_type": "quniform",
+    "_value": [
+      10,
+      580,
+      20
+    ]
+  },
+  "td1_dense_activation": {
+    "_type": "choice",
+    "_value": [
+      "relu"
+    ]
+  },
+  "td1_dense_dropout": {
+    "_type": "uniform",
+    "_value": [
+      0,
+      0.5
+    ]
+  },
+  "td1_dense_l2reg": {
+    "_type": "choice",
+    "_value": [
+      0,
+      0.00001,
+      0.0001,
+      0.001,
+      0.01,
+      0.05
+    ]
+  },
+  "td2": {
+    "_type": "choice",
+    "_value": [
+      {
+        "_name": "Empty"
+      },
+      {
+        "_name": "TD2",
+        "td2_dense_units": {
+          "_type": "quniform",
+          "_value": [
+            10,
+            580,
+            20
+          ]
+        },
+        "td2_dense_activation": {
+          "_type": "choice",
+          "_value": [
+            "relu"
+          ]
+        },
+        "td2_dense_dropout": {
+          "_type": "uniform",
+          "_value": [
+            0,
+            0.5
+          ]
+        },
+        "td2_dense_l2reg": {
+          "_type": "choice",
+          "_value": [
+            0,
+            0.00001,
+            0.0001,
+            0.001,
+            0.01,
+            0.05
+          ]
+        }
+      }
+    ]
+  },
+  "bidirectional_lstms": {
+    "_type": "choice",
+    "_value": [
+      false,
+      true
+    ]
+  },
+  "lstm1_units": {
+    "_type": "quniform",
+    "_value": [
+      20,
+      200,
+      20
+    ]
+  },
+  "lstm1_dropout": {
+    "_type": "uniform",
+    "_value": [
+      0,
+      0.5
+    ]
+  },
+  "lstm1_recurrent_dropout": {
+    "_type": "uniform",
+    "_value": [
+      0,
+      0.5
+    ]
+  },
+  "lstm1_l2reg": {
+    "_type": "choice",
+    "_value": [
+      0,
+      0.00001,
+      0.0001,
+      0.001,
+      0.01,
+      0.05
+    ]
+  },
+  "lstm2": {
+    "_type": "choice",
+    "_value": [
+      {
+        "_name": "Empty"
+      },
+      {
+        "_name": "LSTM2",
+        "lstm2_units": {
+          "_type": "quniform",
+          "_value": [
+            20,
+            200,
+            20
+          ]
+        },
+        "lstm2_dropout": {
+          "_type": "uniform",
+          "_value": [
+            0,
+            0.5
+          ]
+        },
+        "lstm2_recurrent_dropout": {
+          "_type": "uniform",
+          "_value": [
+            0,
+            0.5
+          ]
+        },
+        "lstm2_l2reg": {
+          "_type": "choice",
+          "_value": [
+            0,
+            0.00001,
+            0.0001,
+            0.001,
+            0.01,
+            0.05
+          ]
+        }
+      }
+    ]
+  },
+  "dense1": {
+    "_type": "choice",
+    "_value": [
+      {
+        "_name": "Empty"
+      },
+      {
+        "_name": "DENSE1",
+        "dense1_units": {
+          "_type": "quniform",
+          "_value": [
+            10,
+            580,
+            20
+          ]
+        },
+        "dense1_activation": {
+          "_type": "choice",
+          "_value": [
+            "sigmoid"
+          ]
+        },
+        "dense1_dropout": {
+          "_type": "uniform",
+          "_value": [
+            0,
+            0.5
+          ]
+        },
+        "dense1_l2reg": {
+          "_type": "choice",
+          "_value": [
+            0,
+            0.00001,
+            0.0001,
+            0.001,
+            0.01,
+            0.05
+          ]
+        },
+        "dense2": {
+          "_type": "choice",
+          "_value": [
+            {
+              "_name": "Empty"
+            },
+            {
+              "_name": "DENSE2",
+              "dense2_units": {
+                "_type": "quniform",
+                "_value": [
+                  10,
+                  580,
+                  20
+                ]
+              },
+              "dense2_activation": {
+                "_type": "choice",
+                "_value": [
+                  "sigmoid"
+                ]
+              },
+              "dense2_dropout": {
+                "_type": "uniform",
+                "_value": [
+                  0,
+                  0.5
+                ]
+              },
+              "dense2_l2reg": {
+                "_type": "choice",
+                "_value": [
+                  0,
+                  0.00001,
+                  0.0001,
+                  0.001,
+                  0.01,
+                  0.05
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "out_dense_activation": {
+    "_type": "choice",
+    "_value": [
+      "sigmoid"
+    ]
+  },
+  "out_dense_l2reg": {
+    "_type": "choice",
+    "_value": [
+      0,
+      0.00001,
+      0.0001,
+      0.001,
+      0.01,
+      0.05
+    ]
+  }
+}

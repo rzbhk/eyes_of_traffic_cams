@@ -1,0 +1,9 @@
+{
+    "timesteps": 18,
+    "lstm_units": 51,
+    "bidirectional": true,
+    "random_seed": 254,
+    "input_N": 23,
+    "lstm_recurrent_dropout": 0.07583119820567974,
+    "dense_l2reg": 0.0003429217157848095
+}

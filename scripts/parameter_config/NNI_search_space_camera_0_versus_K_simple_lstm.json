@@ -1,0 +1,47 @@
+{
+  "timesteps": {
+    "_type": "quniform",
+    "_value": [
+      2,
+      500,
+      1
+    ]
+  },
+  "lstm_units": {
+    "_type": "quniform",
+    "_value": [
+      1,
+      500,
+      1
+    ]
+  },
+  "K": {
+    "_type": "quniform",
+    "_value": [
+      1,
+      50,
+      1
+    ]
+  },
+  "lstm_dropout": {
+    "_type": "uniform",
+    "_value": [
+      0,
+      0.5
+    ]
+  },
+  "lstm_recurrent_dropout": {
+    "_type": "uniform",
+    "_value": [
+      0,
+      0.5
+    ]
+  },
+  "dense_l2reg": {
+    "_type": "uniform",
+    "_value": [
+      0,
+      0.001
+    ]
+  }
+}
